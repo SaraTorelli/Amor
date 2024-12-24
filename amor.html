@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiago e Sara</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: black;
+            color: #fff;
+            text-align: center;
+            overflow-y: scroll; /* Permitir rolagem */
+        }
+
+        .stars {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+            animation: moveStars 200s linear infinite; /* Animação mais lenta */
+            z-index: -1;
+        }
+
+        @keyframes moveStars {
+            from {background-position: 0 0;}
+            to {background-position: -10000px 10000px;}
+        }
+
+        .comet {
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, white);
+            animation: moveComet 10s linear infinite;
+        }
+
+        @keyframes moveComet {
+            from {transform: translateX(100%);}
+            to {transform: translateX(-100%);}
+        }
+
+        .header {
+            margin-top: 20px;
+            font-size: 48px; /* Título maior */
+            color: #f00;
+        }
+
+        .message {
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        .counter {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .counter div {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 8px;
+            width: 70px;
+        }
+
+        .carousel {
+            position: relative;
+            margin: 20px auto;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.8s ease-in-out;
+        }
+
+        .carousel img {
+            width: 600px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            animation: bubble 2s infinite;
+        }
+
+        @keyframes bubble {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .music {
+            margin-top: 20px;
+        }
+
+        .music audio {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+    <div class="comet"></div>
+
+    <div class="header">Hiago e Sara</div>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="img/1.jpeg" alt="Foto 1">
+            <img src="img/2.jpeg" alt="Foto 2">
+            <img src="img/3.jpeg" alt="Foto 3">
+            <img src="img/4.jpeg" alt="Foto 4">
+            <img src="img/5.jpeg" alt="Foto 5">
+            <img src="img/6.jpeg" alt="Foto 6">
+            <img src="img/7.jpeg" alt="Foto 7">
+            <img src="img/8.jpeg" alt="Foto 8">
+            <img src="img/9.jpeg" alt="Foto 9">
+            <img src="img/10.jpeg" alt="Foto 10">
+            <img src="img/11.jpeg" alt="Foto 11">
+            <img src="img/12.jpeg" alt="Foto 12">
+            <img src="img/13.jpeg" alt="Foto 13">
+            <img src="img/14.jpeg" alt="Foto 14">
+        </div>
+        <div class="carousel-buttons">
+            <button id="prev">&#8592;</button>
+            <button id="next">&#8594;</button>
+        </div>
+    </div>
+    <div class="message">
+        Hiago, você é a melhor parte dos meus dias e a razão pela qual acredito que o amor verdadeiro não só existe, mas é possível. Cada momento ao seu lado é um presente inesperado, algo que jamais imaginei merecer, mas que agora não consigo imaginar a vida sem. Você transforma os meus dias mais comuns em momentos extraordinários, e o simples fato de te ter ao meu lado é a maior benção da minha vida. 
+
+Obrigada por ser a luz nos meus dias mais sombrios, por me fazer sorrir quando as palavras não são suficientes e por ser, sem dúvida, o meu maior apoio. Você é o meu porto seguro, aquele lugar onde posso ser quem sou, sem medo de ser julgada, onde encontro paz e força para enfrentar qualquer desafio. O amor que sinto por você é algo imensurável, tão profundo e vasto quanto o céu estrelado que brilha sobre nós, um universo de sentimentos que cresce a cada instante.
+
+Eu te prometo, de todo o meu coração, que estarei ao seu lado, não importa o que a vida nos reserve. Estarei aqui para te apoiar, te cuidar e te amar, em todas as estações que o tempo trouxer. Mesmo nos momentos difíceis, em que a vida nos desafiar, estarei firme ao seu lado, porque você é o meu mundo, minha razão, a força que me move. 
+
+Sou eternamente grata por cada segundo que compartilhamos, por cada riso, cada olhar, cada abraço. O que temos é algo raro e precioso, algo que eu nunca imaginei encontrar, mas que agora sei que é o meu maior tesouro. Eu te amo, Hiago, mais do que palavras podem expressar, mais do que o universo consegue medir. E, se eu pudesse, passaria cada dia da minha vida ao seu lado, fazendo com que você se sentisse tão amado quanto me sinto. 
+
+Neste e em todos os mundos que eu tiver, em todas as vidas que eu viver, vou te amar. O meu amor por você transcende o tempo e o espaço, e, independentemente de onde estivermos, eu te encontrarei, porque não importa a forma ou o caminho, você será sempre o meu destino.
+    </div>
+
+    <div class="counter">
+        <div><span id="years">00</span> anos</div>
+        <div><span id="months">00</span> meses</div>
+        <div><span id="days">00</span> dias</div>
+        <div><span id="hours">00</span> horas</div>
+        <div><span id="minutes">00</span> minutos</div>
+        <div><span id="seconds">00</span> segundos</div>
+    </div>
+
+    <div class="music">
+        <h3>Dedicação Musical</h3>
+        <audio controls>
+            <source src="musica/amor.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </div>
+
+    <script>
+        // Contador
+        const targetDate = new Date("2024-08-10T00:00:00"); // Data do início do relacionamento
+
+        function updateCounter() {
+            const now = new Date();
+            const diff = now - targetDate;
+
+            const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+            const months = Math.floor((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
+            const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('years').textContent = years.toString().padStart(2, '0');
+            document.getElementById('months').textContent = months.toString().padStart(2, '0');
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        setInterval(updateCounter, 1000);
+
+        // Carrossel
+        const images = document.querySelector('.carousel-images');
+        const totalImages = images.children.length;
+        let index = 0;
+
+        document.getElementById('prev').addEventListener('click', () => {
+            index = (index > 0) ? index - 1 : totalImages - 1;
+            updateCarousel();
+        });
+
+        document.getElementById('next').addEventListener('click', () => {
+            index = (index < totalImages - 1) ? index + 1 : 0;
+            updateCarousel();
+        });
+
+        function updateCarousel() {
+            images.style.transform = `translateX(-${index * 600}px)`;
+        }
+    </script>
+
+</body>
+</html>
